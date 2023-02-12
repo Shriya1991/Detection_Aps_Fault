@@ -1,0 +1,9 @@
+[ 2023-02-12 16:57:25,410 ] 8  root - INFO Reading data from database: aps and collection: sensor
+[ 2023-02-12 16:57:32,713 ] 10  root - INFO Found columns:Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2023-02-12 16:57:32,714 ] 12  root - INFO Dropping column:_id
+[ 2023-02-12 16:57:32,924 ] 14  root - INFO Row and col
