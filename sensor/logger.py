@@ -7,7 +7,7 @@ import os
 LOG_FILE_NAME = f"{datetime.now().strftime('%m%d_%Y_%H_%M_%S')}.log"
 
 #log directory
-LOG_FILE_DIR = os.path.join.(os.getcwd(), "logs")
+LOG_FILE_DIR = os.path.join(os.getcwd(),"logs")
 
 #create folder is not available
 os.makedirs(LOG_FILE_DIR, exist_ok = True)
