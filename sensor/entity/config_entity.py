@@ -19,6 +19,8 @@ class DataIngestionConfig:
         self.feature_store_dir = os.path.join(self.data_ingestion_dir,"feature_store", FILE_NAME)
         self.train_file_path = os.path.join(self.data_ingestion_dir, "dataset", TRAIN_FILE_NAME)
         self.test_file_path = os.path.join(self.data_ingestion_dir,"dataset", TEST_FILE_NAME)
+        self.text_size = 0.2
+        
 
     def to_dict(self,)->dict:
         try:
