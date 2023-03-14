@@ -5,6 +5,7 @@ from sensor.exception import SensorException
 import os, sys
 import yaml
 import dill
+import numpy as np
 
 def get_collection_as_dataframe(database_name:str,collection_name:str)->pd.DataFrame:
     """
@@ -51,7 +52,7 @@ def save_object(file_path:str, obj:object)-> None:
     try:
         logging.info("Entered the save_object method of MainUtils class")
         os.makedirs(os.path.dirname(file_path), exist_ok = True)
-        with open(file_path, "wh") as file_obj:
+        with open(file_path, "wb") as file_obj:
             dill.dump(obj, file_obj)
         logging.info("Exited the save_object method of ManiUtils class")
     except Exception as e:
